@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.popup-box {
+   user-select: none;
+   width: 20%;
+   background: #f2f2f2;
+   text-align: center;
+   align-items: center;
+   padding: 23px;
+   font-family: 'Anton', sans-serif;
+   border: 1px solid #b3b3b3;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+   border-radius: 5%;
+   z-index: 99999;
+   display: none;
+   transition: 0.3s ease-in-out;
+}
+   .popup-box .fa-question-circle {
+      font-size: 36px;
+      color: #eb9447;
+      margin: -1px 0 8px 0;
+      transform: translateY(10px) scale(1.4);
+   }
+   
+   .popup-box h3 {
+      font-size: 19px;
+      color: #1b2631;
+      margin-bottom: 13px;
+   }
+   .popup-box label {
+      font-size: 15px;
+      letter-spacing: -2px;
+      color: #404040;
+      margin-bottom: 10px;
+   }
+   .popup-box .btns {
+      margin: 30px 0 0 0;
+   }
+   .btns .cancel-btn,
+   .btns .btn-two {
+      background: #999;
+      color: white;
+      font-size: 15px;
+      padding: 7px 9px;
+      border: 1px solid #808080;
+      border-radius: 5px;
+   }
+   
+   .btns .cancel-btn {
+      position: absolute;
+      top: 0;
+      right: 0; 
+      transform: translate(-30px, -8px); 
+   
+   }
+   .cancel-btn:hover {
+      background: red;
+      transition: 0.7s ease;
+   }
+   .cancel-btn:hover .fa-window-close{
+      transform: scale(1.4);
+      transition: 0.7s ease;
+   }
+   
+   .btns .btn-two {
+      position: absolute;
+      bottom: 0;
+      right: 40px;
+      transform: translate(10px, -9px);
+      padding: 5px 30%;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-align: center;
+      text-transform: uppercase;
+   }
+   .btn-two:hover {
+      background: #1b2631;
+      transition: 0.3s ease-out;
+   }
+
+@media screen and (max-width: 1025px) {
+   .popup-box {
+      height: 13rem;
+      padding: 20px 3rem;
+   }
+   .popup-box .fa-question-circle {
+      font-size: 28px;
+   }
+   .popup-box h3 {
+      margin-bottom: 8px;
+   }
+
+}
+
+@media screen and (max-width: 769px) {
+
+   .popup-box {
+      height: 13rem;
+      padding: 3rem 14px 13px; 
+      width: 40%;
+   }
+   .popup-box .fa-question-circle {
+      margin-bottom: 9px;
+   }
+   .popup-box h3 {
+      font-size: 14px;
+      margin-bottom: 6px;
+   }
+   .popup-box label {
+      margin-bottom: 2px;
+   }
+   .cancel-btn {
+      right: 3%;
+   }
+   .btns .btn-two {
+      transform: translate(-1.4rem,  -15px); 
+   }
+}
+
+@media screen and (max-width: 460px) {
+   
+   .popup-box {
+      padding: 3rem;
+   } 
+   .popup-box h3{
+      margin-bottom: 1px;
+   }
+
+   
+   .popup-box label {
+      font-size: 12px;
+      transform: translate(4px);
+      display: none;
+   }
+}

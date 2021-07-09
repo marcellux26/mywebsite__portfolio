@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>CSS buttons - liquid effect in CSS with SVG</title>
+   <link rel="icon" href="data:;">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>CSS buttons - liquid effect in CSS with SVG</h1>
+   <div class="container">
+   <div class="button">
+      <i class="fab fa-facebook-f"></i>
+      <div class="blurred">
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+
+   <div class="button">
+      <i class="fab fa-instagram"></i>
+      <div class="blurred">
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+
+   <div class="button">
+      <i class="fab fa-youtube"></i>
+      <div class="blurred">
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+
+   <div class="button">
+      <i class="fab fa-linkedin-in"></i>
+      <div class="blurred">
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+
+   <div class="button">
+      <i class="fab fa-google-plus-g"></i>
+      <div class="blurred">
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+
+   <div class="button">
+      <i class="fab fa-twitter"></i>
+      <div class="blurred">
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+
+   <div class="button">
+      <i class="fab fa-pinterest-p"></i>
+      <div class="blurred">
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+
+   <div class="button">
+      <i class="fab fa-whatsapp"></i>
+      <div class="blurred">
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+
+   <div class="button">
+      <i class="fab fa-twitch"></i>
+      <div class="blurred">
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+   </div>
+   
+   <svg>
+      <defs>
+      <filter id='goo'>
+         <feGaussianBlur in='SourceGraphic' 
+         stdDeviation='10' result='name'/>
+            <feColorMatrix in='name' mode='matrix'
+               values='1 0 0 0 0
+                     0 1 0 0 0 
+                     0 0 1 0 0
+                     0 0 0 30 -15 ' result='aab'/>
+         <feBlend in='SourceGraphic' in2='aab'/>
+      </filter>
+      </defs>
+   </svg>
+</body>
+</html>

@@ -1,0 +1,35 @@
+:root{
+	--mainColor:#46344E;
+	--secondaryColor:#382a3f;
+
+	--borderColor:#1d1520;
+
+	--mainText:#fff;
+	--secondaryText:#eeeeee;
+
+	--themeDotBorder:#FFF;
+
+	--previewBg:rgb(29, 21, 32, 0.8);
+	--previewShadow:#2b202f;
+
+
+	--submitBtn:#8534a3;
+
+
+}
+.theme-dot {
+   box-shadow: none;
+}
+
+.pagination a {
+	background: #333;
+}
+.num::before, .next::before {
+	border-right: 20px solid #333;
+   right: 100%;
+}
+
+.num::after, .prev::after {
+   border-right: 20px solid var(--mainColor);
+   right: 0;
+}

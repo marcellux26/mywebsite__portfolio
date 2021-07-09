@@ -1,0 +1,30 @@
+:root{
+	--mainColor:#606B56;
+	--secondaryColor:#515a48;
+
+	--borderColor:#161914;
+
+	--mainText:#fff;
+	--secondaryText:#eeeeee;
+
+	--themeDotBorder:#FFF;
+
+	--previewBg:rgb(81, 90, 72, 0.8);
+	--previewShadow:#2a2f25;
+
+
+	--submitBtn:#669966;
+
+
+}
+.theme-dot {
+   box-shadow: none;
+}
+
+.num::after, .prev::after {
+   border-right: 20px solid var(--mainColor);
+   right: 0;
+}
+/* .post-wrapper div {
+	color: #333;
+} */

@@ -1,0 +1,3 @@
+bucket-policy.txt
+**/node_modules/
+.vscode/
